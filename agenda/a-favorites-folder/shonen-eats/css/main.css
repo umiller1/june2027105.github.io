@@ -1,0 +1,285 @@
+/* IMPORTS AND LINKS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;900&display=swap');
+/* RESETS */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* GENERAL STYLES */
+:root {
+    --main: #00a651;
+    --alt: #bc1c14;
+    --sub: #bdbdbd;
+    --blk: #111;
+    --wht: #eee;
+    --head: 'Bebas Neue', sans-serif;
+    --body: 'Lato', sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+body {
+    background-color: #232323;
+    color: #eee;
+}
+h1, h2, .logo span {
+    font-family: var(--head);
+}
+h3, p, a, li, blockquote, span {
+    font-family: var(--body);
+}
+.logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    color: #eee;
+    letter-spacing: 0.2em;
+    transition: all 0.5s;
+}
+.logo img {
+    width: 3.5rem;
+}
+.logo span {
+    font-size: 2rem;
+}
+.contain {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+/* Header / Navigation */
+header {
+    color: #eee;
+    display: grid;
+    grid-template-rows: auto minmax(0px, 1fr);
+    height: 100vh;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 1.25rem;
+    gap: 1.25rem;
+}
+nav .logo {
+    margin-right: auto;
+    padding: 1rem 0px;
+}
+nav a:not(.logo) {
+    font-size: 1.125rem;
+    color: #eee;
+    font-weight: 900;
+    text-decoration: none;
+    border-left: 2px solid #232323;
+    padding-left: 0.25rem;
+    transition: all 0.5s;
+}
+nav a:hover {
+    color: #00a651;
+    border-color: #00a651;
+}
+nav a.btn {
+    background-color: transparent;
+    border: 2px solid #eee;
+    color: #eee;
+    padding: 0.5rem 1rem;
+}
+nav a.btn:hover {
+    background-color: #eee;
+    color: #bc1c14;
+}
+
+/* hero */
+#hero {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+#hero .hero-img {
+    background-image: url(../images/zoros-seaking-feast.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#hero .hero-png {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.25rem;
+    width: 10rem;
+    filter: drop-shadow(0px 0px 15px var(--main));
+}
+#hero .content {
+    z-index: 1;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+#hero .content h3 {
+    color: #bc1c14;
+    font-size: 1rem;
+    border-left: 3px solid #bc1c14;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+#hero .content h1 {
+    font-size: 6rem;
+    letter-spacing: 0.08em;
+    line-height: 6.5rem;
+}
+#hero .content p {
+    margin: 0px 0px 3rem;
+}
+#hero .content .btn  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: max-content;
+    font-family: var(--head);
+    font-size: 1.5rem;
+    color: #eee;
+    text-decoration: none;
+    border: 4px solid #00a651;
+    background-color: #00a651;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem 20%;
+    transition: all 0.5s;
+}
+#hero .content .btn:hover {
+    background-color: transparent;
+    color: #00a651;
+}
+#hero .content .btn {
+    position: relative;
+}
+#hero .content .btn img {
+    width: 5.25rem;
+    z-index: -1;
+    position: absolute;
+    bottom: 0px;
+    left: -2rem;
+    transition: all 0.5s;
+}
+#hero .content .btn:hover img {
+    opacity: 0.5;
+}
+
+/* MAIN */
+/* sect 1 */
+.sect1 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    grid-template-rows: max-content minmax(0px, 1fr) minmax(0px, 1fr);
+    grid-template-areas:
+        "head head head"
+        "para img1 img2"
+        "img3 img4 btn"
+    ;
+    gap: 0.5rem;
+    padding: 2rem 0px;
+}
+.sect1 #sect1head {
+    grid-area: head;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.15em;
+}
+.sect1 #sect1p {
+    grid-area: para;
+    padding: 0px 4rem 0px 1.25rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 1.5rem;
+    font-size: 1.125rem;
+}
+#img1 {
+    grid-area: img1;
+    background: linear-gradient(to bottom, #111111ff 10%, #11111100), url(../images/mysteriously-plain-pancakes.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#img2 {
+    grid-area: img2;
+    background: linear-gradient(to bottom, #111111ff 10%, #11111100), url(../images/juvias-love.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#img3 {
+    grid-area: img3;
+    background: linear-gradient(to bottom, #111111ff 10%, #11111100), url(../images/tentens-broken-back.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#img4 {
+    grid-area: img4;
+    background: linear-gradient(to bottom, #111111ff 10%, #11111100), url(../images/hashiras-final-meal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sect1 #sect1btn {
+    grid-area: btn;
+    border: 3px solid #eee;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--head);
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    line-height: 1.75em;
+    color: #eee;
+    transition: all 0.5s;
+}
+.sect1 #sect1btn:hover {
+    background-color: #eee;
+    color: #bc1c14;
+}
+.sect1 .img-holder {
+    position: relative;
+    z-index: 1;
+}
+.sect1 .img-holder img {
+    width: 5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    z-index: -1;
+    filter: drop-shadow(0px 0px 15px var(--main));
+}
+.sect1 .img-holder h2 {
+    margin: 1.25rem 0px 0px 1.25rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    line-height: 3rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.25rem 0px;
+}
+footer a {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border: 2px solid #eee;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}

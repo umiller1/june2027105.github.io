@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#two-col {
+    display: flex;
+    gap: 24px;
+    padding: 25px;
+}
+
+.sidebar {
+    border: 3px ridge orangered;
+    padding: 20px;
+    height: 150px;
+    position: sticky;
+    top: 25px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 12px;
+}
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    color: orangered;
+}
+.sidebar h2 {
+    margin-bottom: 12px;
+}
+.wiki-content {
+    padding-right: 20px;
+}
+.wiki-content h1 {
+    margin: 12px 0;
+    border-bottom: 3px ridge orangered;
+}
+.wiki-content p.tiny {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.sect1 {
+    display: flex;
+    gap: 50px;
+    justify-items: flex-end;
+}
+.sect1 .cover-img {
+    text-align: center;
+    flex: 1;
+}
+.sect1 .contents {
+    flex: 3;
+}
+.sect1 .cover-img h3 {
+    background-color: orangered;
+    padding: 10px 0;
+}
+.sect1 img {
+    width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+.sect1 p, .sect2 p {
+    margin-bottom: 15px;
+}
