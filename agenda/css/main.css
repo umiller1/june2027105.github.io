@@ -6,7 +6,7 @@
 }
 body {
     color: #111;
-    background-color: #ffe8c7;
+    background-color: #fff0da;
     font-family: "museo-sans", sans-serif;
     font-weight: 300;
 }
@@ -15,7 +15,7 @@ img {
     max-height: 100%;
     object-fit: cover;
 }
-h1, h2, h4 {
+h1, h2, h4, #tmb {
     font-family: "gardein", sans-serif;
     font-weight: 700;
     /* font-family: "sirenia", sans-serif;
@@ -78,6 +78,13 @@ ul {
 .show {
     opacity: 0;
     visibility: hidden;
+}
+#tmb {
+    color: #fff0da;
+    background-color: #005b4b;
+    padding: 10px 0px;
+    border-top: 0.5px solid #005b4b;
+    border-bottom: 0.5px solid #005b4b;
 }
 
 /* Basic Layout Setup */
@@ -275,7 +282,7 @@ main {
             position: absolute;
             top: 30px;
             left: 10px;
-            background-color: #ff6229;
+            background-color: #005b4b;
             padding: 5px 10px;
         }
     }
