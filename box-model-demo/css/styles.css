@@ -1,0 +1,36 @@
+div {
+    border: 15px dashed orange;
+    /* 
+        Margins can have up to 4 values. This means
+        there are 4 ways to write margins using shorthand.
+
+        Margin with 1 value is applied to all
+        four sides of the element.
+
+        Margin with 2 values: the 1st value is
+        applied to the top AND bottom. The 2nd
+        value is applied to the left AND right.
+
+        Margin with 3 values: the 1st value is
+        the top, the 2nd value is the left AND right,
+        the third value is the bottom.
+
+        Margin with 4 values: 1st is on the top,
+        2nd is on the right, 3rd is on the bottom,
+        and 4th is on the left.
+
+        Padding follows the same shorthand rules above.
+    */
+    margin: 24px 50px 180px 200px;
+    padding: 24px 50px;
+    background-color: maroon;
+}
+
+p {
+    border: 14px solid purple;
+    background-color: green;
+    color: ghostwhite;
+    margin: 30px 50px 100px;
+    padding: 20px 40px 60px 80px;
+    border-radius: 30px;
+}
