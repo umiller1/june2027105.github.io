@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+#navbar {
+    background-color: blue;
+    padding: 24px;
+    text-align: center;
+    /* a {
+        color: white;
+    } */
+}
+#navbar a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+p a {
+    color: teal;
+}
+
+p.warning {
+    color: red;
+    font-size: 35px;
+    /* a {
+        color: yellow;
+    } */
+}
+
+p.warning a {
+    color: yellow;
+}
+
+ul {
+    color: green;
+    a {
+        color: lime;
+    }
+}
+ul p a {
+    color: purple;
+}
+
+ul div a {
+    color: orange;
+}
