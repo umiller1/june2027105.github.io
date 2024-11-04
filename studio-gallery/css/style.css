@@ -1,0 +1,29 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the assignment.
+
+    Good luck, and have fun!
+*/
+.frame-1 {
+    border: 10px ridge #654f2b;
+    margin: 70px 12px 0px;
+    /* 
+        Box-shadow: x-offset y-offset blur-radius shadow-color
+    */
+    box-shadow: -2px 2px 2px #444;
+}
+
+.frame-1 div {
+    background-color: #a00;
+    border: 0px;
+    box-shadow: inset 0px 0px 4px black;
+    padding: 16px;
+}
+
+.frame-1 img {
+    width: 80px;
+    box-shadow: inset 0px 0px 10px black;
+    display: block;
+}

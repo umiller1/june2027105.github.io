@@ -1,0 +1,40 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the assignment.
+
+    Good luck, and have fun!
+*/
+.frame-1 {
+    border: 0px ridge #654f2b;
+    margin: 70px 12px 0px;
+    position: relative;
+    /* 
+        Box-shadow: x-offset y-offset blur-radius shadow-color
+    */
+    &::before {
+        content: "";
+        background-image: url(../images/dark.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        /* opacity: 60%; */
+        mix-blend-mode: difference;
+    }
+}
+
+.frame-1 div {
+    background-color: #fff;
+    border: 0px;
+    padding: 2px;
+}
+
+.frame-1 img {
+    width: 100px;
+    box-shadow: inset 0px 0px 10px black;
+    display: block;
+}

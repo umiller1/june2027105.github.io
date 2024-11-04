@@ -1,0 +1,44 @@
+.absolute-heading {
+    font-size: 36px;
+}
+.absolute-paragraph {
+    font-size: 18px;
+}
+
+.relative-heading {
+    font-size: 5vw;
+    /* You can use clamp to set min, base, and max sizes. */
+    /* font-size: clamp(5px, 10vw, 60px); */
+}
+.relative-paragraph {
+    font-size: 2.5vw;
+}
+
+.absolute-img {
+    width: 350px;
+}
+.relative-img {
+    width: 100%;
+}
+
+.outer-container {
+    width: 66%;
+    border: 3px solid red;
+}
+.inner-container {
+    border: 3px solid blue;
+    width: 50%;
+}
+.inner-container p,
+.inner-container img {
+    width: 48%;
+    display: inline-block;
+}
+
+img {
+    width: 200px !important;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid purple;
+}
