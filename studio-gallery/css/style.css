@@ -7,8 +7,8 @@
     Good luck, and have fun!
 */
 .frame-1 {
-    border: 10px ridge #654f2b;
-    margin: 70px 12px 0px;
+    border: 5px ridge #654f2b;
+    margin: 40px 12px 0px;
     /* 
         Box-shadow: x-offset y-offset blur-radius shadow-color
     */
@@ -24,6 +24,5 @@
 
 .frame-1 img {
     width: 80px;
-    box-shadow: inset 0px 0px 10px black;
     display: block;
 }
