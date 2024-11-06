@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.single-column {
+    width: 50%;
+    max-width: 1440px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0px auto;
+}
+.light-container {
+    background-color: coral;
+    padding: 48px 0px;
+}
+.dark-container {
+    background-color: darkmagenta;
+    padding: 48px 0px;
+    color: white;
+}
