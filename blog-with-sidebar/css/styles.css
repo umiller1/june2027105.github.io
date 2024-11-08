@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    background-color: #222;
+    color: #fefefe;
+}
+h1, h2, h4 {
+    font-family: "Faculty Glyphic", sans-serif;
+}
+p, li, blockquote {
+    font-size: 1.125rem;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fefefe;
+    transition: color 0.5s;
+    &:hover {
+        color: #fb83ae;
+    }
+}
+.contain {
+    width: 90vw;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+/* Navigation */
+header {
+    border-bottom: 1px solid #00faf5;
+}
+#top-nav, #bott-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+        display: flex;
+        align-items: center;
+        a {
+            padding: 12px;
+        }
+    }
+    a {
+        transition: background-color 0.5s;
+    }
+    a:hover {
+        color: #fefefe;
+        background-color: #fb83ae;
+    }
+}
+#bott-nav {
+    flex-wrap: wrap;
+    a {
+        flex: 1;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+/* Grid Layout */
+main {
+    display: grid;
+    grid-template-columns: 10vw 1fr minmax(max-content, 250px) 10vw;
+    grid-template-areas:
+        "headnotes headnotes headnotes headnotes"
+        ". article sidebar ."
+    ;
+}
+
+/* HEADNOTES */
+#headnotes {
+    grid-area: headnotes;
+    padding: 25px 0px;
+    .contain {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+aside {
+    grid-area: sidebar;
+    div {
+        position: sticky;
+        top: 0px;
+    }
+    h2 {
+        padding: 20px 15px 10px 0px;
+        border-bottom: 2px solid #00faf5;
+        font-size: 1.25rem;
+    }
+    ul {
+        background-color: #111;
+        list-style-type: none;
+        li {
+            text-align: right;
+            padding: 15px 10px;
+            font-weight: 600;
+            border-right: 10px solid;
+            position: relative;
+            &:nth-of-type(1n) {
+                border-color: #00faf5;
+            }
+            &:nth-of-type(2n) {
+                border-color: #ff4a4a;
+            }
+            &:nth-of-type(3n) {
+                border-color: #ff9c23;
+            }
+            &:nth-of-type(4n) {
+                border-color: #fa5aff;
+            }
+            &::after {
+
+            }
+        }
+    }
+}
+
+#primary {
+    grid-area: article;
+    padding: 0px 200px 0px 0px;
+}
