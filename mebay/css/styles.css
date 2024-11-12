@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+h1, h2 {
+    font-family: "Faculty Glyphic", sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.contain {
+    width: 90dvw;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+/* header and navigation */
+header {
+    background-color: #222;
+    color: #fefefe;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        width: 50px;
+    }
+    a {
+        color: #fefefe;
+        text-decoration: none;
+        &:hover {
+            background-color: #c4ff77;
+        }
+    }
+    .links {
+        display: flex;
+        align-items: center;
+        a {
+            padding: 15px 10px;
+        }
+    }
+}
+
+/* Main setup */
+main {
+    padding: 25px 0px;
+    .contain {
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr;
+    }
+}
