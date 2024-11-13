@@ -96,9 +96,15 @@ main #desc {
     gap: 15px;
 }
 
-main #ecomm {
+main #sidebar {
     position: relative;
     aside {
-        background-color: #71c602;
+        border: 1px solid #555;
+        padding: 25px;
+        position: sticky;
+        top: 0px;
+    }
+    h2 {
+        color: blue;
     }
 }
