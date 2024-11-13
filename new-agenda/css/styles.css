@@ -40,8 +40,8 @@ nav {
     justify-content: space-between;
     padding: 20px 0px 40px;
     .title {
-        background: #111;
-        color: #fff;
+        background: #ffc400;
+        color: #111;
         padding: 20px;
         border-radius: 25px;
         h1 {
@@ -82,10 +82,10 @@ main {
 }
 main .contain {
     display: grid;
-    grid-template-columns: 650px max-content;
+    grid-template-columns: 650px 1fr;
     gap: 80px;
     height: 100%;
-    padding-bottom: 25px;
+    padding-bottom: 45px;
     .col-a {
         display: flex;
         flex-direction: column;
@@ -106,10 +106,43 @@ main .contain {
         }
         div {
             flex: 1;
-            background-color: #111;
-            color: #fff;
+            background-color: #94d900;
+            color: #111;
             padding: 25px;
             border-radius: 0px 0px 25px 25px;
         }
+        h2 {
+            margin-bottom: 10px;
+        }
     }
+    .col-b {
+        flex: 1;
+        h3 {
+            margin: 25px 0px 5px;
+            font-size: 1.5rem;
+            color: #94d900;
+        }
+        ul {
+            list-style-type: none;
+        }
+        strong {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        #break {
+            background-color: #ffc400;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #111;
+    color: #fff;
 }
