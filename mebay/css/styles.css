@@ -15,6 +15,17 @@ img {
     width: 100%;
     object-fit: cover;
 }
+a {
+    color: #71c602;
+}
+.btn {
+    display: inline-block;
+    background-color: #71c602;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    text-align: center;
+}
 .contain {
     width: 90dvw;
     max-width: 1440px;
@@ -37,7 +48,7 @@ nav {
         color: #fefefe;
         text-decoration: none;
         &:hover {
-            background-color: #c4ff77;
+            background-color: #71c602;
         }
     }
     .links {
@@ -54,6 +65,40 @@ main {
     padding: 25px 0px;
     .contain {
         display: grid;
-        grid-template-columns: 2fr 3fr 1fr;
+        grid-template-columns: minmax(250px, 2fr) 500px minmax(0px, 1fr);
+        gap: 50px;
+    }
+}
+
+main #visuals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    img:not(.gallery img) {
+        flex: 100%;
+        min-height: 50%;
+    }
+    .gallery {
+        display: flex;
+        gap: 10px;
+        overflow-x: scroll;
+        img {
+            width: 150px;
+            height: 150px;
+            aspect-ratio: 1 / 1;
+        }
+    }
+}
+
+main #desc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main #ecomm {
+    position: relative;
+    aside {
+        background-color: #71c602;
     }
 }
