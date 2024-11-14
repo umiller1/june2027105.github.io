@@ -144,4 +144,83 @@ footer {
     flex-wrap: wrap;
     background-color: #111;
     color: #fff;
+    #attendance {
+        flex: 2;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        h2 {
+            font-size: 4rem;
+            color: #94d900;
+        }
+        p {
+            font-size: 2rem;
+        }
+    }
+    #dotd {
+        position: relative;
+        flex: 1;
+        h4 {
+            background-color: #ffc400;
+            color: #111;
+            padding: 15px;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+        iframe {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 1395px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        .title {
+            text-align: center;
+            p {
+                flex-direction: column;
+            }
+        }
+        .links {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+    main {
+        height: auto;
+        max-height: none;
+    }
+    main .contain {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        #funfact {
+            img {
+                max-height: 200px;
+            }
+            div {
+                padding: 15px 20px;
+            }
+        }
+    }
+    footer {
+        flex-direction: column;
+        #attendance {
+            h2 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
