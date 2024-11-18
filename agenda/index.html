@@ -2,137 +2,103 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>105 Class Agenda</title>
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/current-activity.js"></script>
+        <title>Class Agenda | 105 Web Dev</title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
-            <nav>
-                <ul class="contain">
-                    <li class="remove">
-                        <a href="https://first-gdwd.github.io/cookbook/" target="_blank">Coding Cookbook</a>
-                    </li>
-                    <li id="date" class="graphics">
-                        <h1>105 - Web Design & Development</h1>
-                        <p>
-                            <b>Week 23 Day 2</b> &bull; Nov 13 2024
-                            <!-- <b><i><br>HAPPPY HALLOOWEENT</i></b> -->
-                        </p>
-                    </li>
-                    <li class="remove">
-                        <a href="https://github.com/umiller1/june2027105.github.io" target="_blank">Class Repository</a>
-                    </li>
-                </ul>
-                <div class="contain greeting">
+            <nav class="contain">
+                <div class="title">
+                    <h1>105 - Web Design & Development</h1>
                     <p>
-                        <b>Good morning everyone!</b>
-                        Today we have a lab day!
-                        <!-- <strong>Your Final Eval is today!</strong> -->
+                        <strong>Week 24 Day 1</strong>
+                        <span class="diamond">&#9672;</span>
+                        Nov 18 2024
                     </p>
+                </div>
+                <div class="links">
+                    <a
+                        href="https://first-gdwd.github.io/cookbook/"
+                        target="_blank"
+                    >
+                        Coding Cookbook
+                    </a>
+                    <a
+                        href="https://github.com/umiller1/june2027105.github.io"
+                        target="_blank"
+                    >
+                        Class Repository
+                    </a>
+                    <a
+                        href="lab.html"
+                        target="_blank"
+                    >
+                        Lab Day Activites
+                    </a>
                 </div>
             </nav>
-            <div id="agenda">
-                <div class="contain">
-                    <div id="current-activity" class="vidhelper">
-                        <div class="container">
-                            <h2 id="activity-type">
-                                <span class="active">Presentation</span>
-                                <span>Follow-Along Time</span>
-                                <span>Drills Time</span>
-                                <span>Lab Time</span>
-                                <span>Quiz Time</span>
-                                <span>Finals Time</span>
-                            </h2>
-                            <h2 id="activity-name">
-                                Day Breakdown and Attendance Question
-                            </h2>
-                        </div>
-                        <video autoplay muted loop class="backvid">
-                            <source src="vids/essence.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="vidoverlay"></div>
-                    </div>
-                    <div id="breakdown">
-                        <h3 class="period">Period 1:</h3>
-                        <ul>
-                            <!-- Later on create "Quiz and finals" colors in JS -->
-                            <li><b>Exercise:&nbsp;</b><span>MeTube</span></li>
-                            <li><b>Review Kahoot:&nbsp;</b><span>Basic Flexbox Review</span></li>
-                        </ul>
-                        <h3 class="period">Period 2:</h3>
-                        <ul>
-                            <li><b>Review Kahoot:&nbsp;</b><span>Basic CSS Grid Review</span></li>
-                            <li id="tmb"><b>Ten<sup>10</sup>Minute Break</b></li>
-                            <li><b>PROJECT:&nbsp;</b><span> "mebay" Product Page</span></li>
-                        </ul>
-                        <h3 class="period">Period 3:</h3>
-                        <ul>
-                            <li><b>PROJECT:&nbsp;</b><span> "mebay" Product Page</span></li>
-                        </ul>
-                        <h3 class="period">Period 4:</h3>
-                        <ul>
-                            <li><b>PROJECT:&nbsp;</b><span> "mebay" Product Page</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="breaks" class="contain">
-                <p><b>Lunch Break:</b> 12:00 PM ET - 12:45 PM ET</p>
-                <p>SCROLL<br>for Attendance Question</p>
-            </div>
         </header>
-
         <main>
-            <div id="funfact">
-                <img
-                    src="https://images.ctfassets.net/7ybtdzdgha5d/7J0d41Hml0BMaeKLGDlaWL/164e69bb1476dc8fdd2d26e7923995e7/Canva_-_Red_Cat_Likes_Homemade_Waffles.jpg?w=599&h=599&fl=progressive&q=65&fm=jpg"
-                    alt="Fun fact image."
-                >
-                <div class="container">
-                    <h2>Fun Fact:</h2>
-                    <p>
-                        <span>
-                            — 
-                            Cat's lack the necessary set of proteins for their
-                            tastebuds to taste sweet things. While they can still
-                            taste something, it wouldn't be what we know as sweet.
-                            For example, a marshmellow will taste more like a potate
-                            to a cat than a marshellow.
-                        </span>
-                        
+            <div class="contain">
+                <div class="col-a">
+                    <p id="greeting">
+                        <strong>Good morning!</strong>
+                        Today we'll be learning about heroes!
                     </p>
+                    <div id="funfact">
+                        <img
+                            src="https://images.unsplash.com/photo-1592096304832-62463bfdc822?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="The fun fact image."
+                        >
+                        <div>
+                            <h2>Fun Fact</h2>
+                            <p>
+                                — 
+                                The original name for the search 
+                                engine Google was Backrub. It was 
+                                renamed Google after the googol, which 
+                                is the number one followed by 100 zeros. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="question" class="contain">
-                <div class="container att">
-                    <h2>Attendance Question:</h2>
-                    <p>
-                        If you could host a talkshow for one night, who would
-                        you have as your guest?
-                    </p>
-                    <p>
-                        <i>
-                            <b>Examples:</b>
-                                The choice is yours!
-                        </i>
-                    </p>
-                    <span class="wm">
-                            <b>Weekly Message:</b>
-                            Typography may not feel emotion but it can
-                            definitely convey it. Make sure you're using
-                            those exclamation points, trailing periods,
-                            and capital letters appropriately!
-                    </span>
-                </div>
-                <div class="container dotd">
-                    <h4>Design Example(s) of the Day:</h4>
-                    <iframe src="https://www.behance.net/embed/project/194401125?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+                <div class="col-b">
+                    <h2>Day Breakdown</h2>
+                    <h3>Period 1:</h3>
+                    <ul>
+                        <li><strong>Presentation:</strong>Hero Content Layouts</li>
+                        <li><strong>Demo:</strong>Heroes</li>
+                    </ul>
+                    <h3>Period 2:</h3>
+                    <ul>
+                        <li><strong>Demo:</strong>Heroes</li>
+                        <li><strong>Exercise:</strong>Three Heroes</li>
+                    </ul>
+                    <h4 id="break">10 Minute Break</h4>
+                    <h3>Period 3:</h3>
+                    <ul>
+                        <li><strong>Exercise:</strong>Three Heroes</li>
+                    </ul>
+                    <h3>Period 4:</h3>
+                    <ul>
+                        <li><strong>Exercise:</strong>Three Heroes</li>
+                    </ul>
                 </div>
             </div>
         </main>
+        <footer>
+            <div id="attendance" class="contain">
+                <h2>Attendance Question!</h2>
+                <p>
+                    What is a show, movie, comic, book, or video game
+                    you have been consuming a lot of recently?
+                </p>
+            </div>
+            <div id="dotd">
+                <h4>Design of the Day</h4>
+                <iframe src="https://www.behance.net/embed/project/194401125?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </footer>
     </body>
 </html>
