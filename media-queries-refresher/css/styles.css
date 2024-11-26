@@ -60,3 +60,23 @@ h1 {
     text-align: center;
     margin: 15px 0px 0px;
 }
+
+@media screen and (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #cards-container {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #nav .links {
+        flex-direction: column;
+        text-align: center;
+    }
+}
