@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    gap: 25px;
+    margin: 25px;
+}
+
+.card {
+    border: 12px solid black;
+    background-color: pink;
+    width: 250px;
+    padding: 25px;
+}
+
+.card1 {
+    background: linear-gradient(to bottom, red, green);
+}
+
+.card2 {
+    background: linear-gradient(to bottom, blue, purple);
+    color: white;
+}
