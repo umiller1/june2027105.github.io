@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.contain {
+    width: 80vw;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+#hero img {
+    height: 70dvh;
+}
+
+nav {
+    background-color: #d6c4ff;
+}
+nav .contain {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #111;
+        padding: 15px 0px;
+    }
+    .logo {
+        display: block;
+        margin: 0px auto;
+    }
+    .drop {
+        position: relative;
+    }
+    .menu {
+        position: absolute;
+        background-color: #d6c4ff;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        a {
+            padding: 0px;
+        }
+    }
+}
