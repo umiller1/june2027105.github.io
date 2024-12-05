@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-@import url("https://use.typekit.net/axq4ggd.css");
-@font-face {
-    font-family: 'marline';
-    src: url('../fonts/marline-webfont.woff2') format('woff2'),
-         url('../fonts/marline-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -18,7 +9,7 @@ body {
     font-weight: 300;
 }
 h1, h2, h3, h4 {
-    font-family: "limon-script", sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     font-weight: 800;
 }
 img {
