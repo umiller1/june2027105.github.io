@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Staatliches&display=swap');
+:root {
+    --prim: #4235a8;
+    --sec: #6363e3;
+    --acc: #df9240;
+    --blk: #010101;
+    --wht: #efefef;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -7,7 +14,7 @@
 body {
     font-family: "Source Serif 4", serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
 }
 h1, h2, h4 {
     font-family: "Staatliches", sans-serif;
@@ -21,8 +28,33 @@ img {
     min-height: 10px;
     object-fit: cover;
 }
-.contain {
-    width: 90dvw;
+header, section, footer {
+    height: 100dvh;
+}
+.container {
+    width: 90dvw; 
     max-width: 1440px;
     margin: 0px auto;
+}
+
+header {
+    text-align: center;
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .card {
+        background-color: var(--prim);
+        color: var(--wht);
+        padding: 25px;
+        width: 250px;
+    }
+    .period {
+        width: max-content;
+        font-size: 2rem;
+        aspect-ratio: 1 / 1;
+    }
 }
