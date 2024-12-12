@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Staatliches&display=swap');
 :root {
-    --prim: #4235a8;
-    --sec: #6363e3;
-    --acc: #df9240;
+    --prim: #8fdaff;
+    --sec: #ffc98f;
+    --acc: #c5ff8f;
+    --acc2: #ff8fc0;
     --blk: #010101;
     --wht: #efefef;
 }
@@ -19,6 +20,7 @@ body {
 h1, h2, h4 {
     font-family: "Staatliches", sans-serif;
     font-weight: bold;
+    letter-spacing: 0.075em;
 }
 img {
     width: 100%;
@@ -38,23 +40,110 @@ header, section, footer {
 }
 
 header {
-    text-align: center;
-    .card-container {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    h1 {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
         gap: 25px;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 20px;
+        span:first-child {
+            font-size: 170%;
+        }
     }
-    .card {
+    .four-quads {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        ul {
+            padding: 100px;
+        }
+        h2 {
+            position: absolute;
+        }
+    }
+    #q1 {
+        background-color: var(--sec);
+        align-items: flex-end;
+        justify-content: flex-end;
+        h2 {
+            top: 40px;
+            left: 40px;
+        }
+    }
+    #q2 {
+        background-color: var(--acc);
+        justify-content: flex-end;
+        h2 {
+            top: 40px;
+            right: 40px;
+        }
+    }
+    #q3 {
         background-color: var(--prim);
+        align-items: flex-end;
+        h2 {
+            bottom: 40px;
+            left: 40px;
+        }
+    }
+    #q4 {
+        background-color: var(--acc2);
+        h2 {
+            bottom: 40px;
+            right: 40px;
+        }
+    }
+    #mid {
+        height: max-content;
+        width: max-content;
+        background-color: var(--blk);
         color: var(--wht);
         padding: 25px;
-        width: 250px;
-    }
-    .period {
-        width: max-content;
+        text-align: center;
+        position: absolute;
+        justify-self: center;
+        align-self: center;
         font-size: 2rem;
-        aspect-ratio: 1 / 1;
+    }
+}
+
+#fun-fact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    div:first-child {
+        border-right: 10px solid var(--prim);
+        border-image: linear-gradient(to bottom, var(--prim), var(--prim),var(--acc)) 1;
+        padding: 40px;
+        font-size: 2rem;
+    }
+    div:last-child {
+        border-left: 10px solid var(--acc2);
+        border-image: linear-gradient(to bottom, var(--acc2), var(--acc2),var(--sec)) 1;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .question {
+        background-color: var(--acc);
+    }
+    .resources {
+        background-color: var(--sec);
     }
 }
